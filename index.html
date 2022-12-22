@@ -12,13 +12,17 @@
 </head>
 <body>
 
-  <div class="center">
-    <div class="container">
+  <main>
+    <article class="container">
 
       <div class="card">
-        <div class="card_image">
-          <img src="./images/image-product-desktop.jpg" alt="Image de parfum">
-        </div>
+        <picture class="card_image">
+          <source media="(min-width: 616px)" srcset="./images/image-product-desktop.jpg" />
+          <img
+            src="images/image-product-mobile.jpg"
+            alt="Photo of a bottle of Y Eau de Toilette<"
+          />
+        </picture>
   
         <div class="card_text">
           <p class="text_title">Perfume</p>
@@ -26,18 +30,18 @@
           <p class="text">A florar, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the house of CHANEL.</p>
           <div class="card_text_flex">
             <p class="price">$149.99</p>
-            <p class="price_reduction">$169.99</p>
+            <del class="price_reduction"><span class="sr-only">Previous Price</span>$169.99</del>
           </div>
           <a class="card_button" href="#"><img src="./images/icon-cart.svg" alt="Shop"> Add to cart</a>
         </div>
       </div>
-    </div>  
+    </article>  
+  </main>
 
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a target="_blank" href="https://www.sagby.fr/">Sagby</a>.
-    </div>
-  </div>
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a target="_blank" href="https://www.sagby.fr/">Sagby</a>.
+  </footer>
 
 </body>
 </html>
